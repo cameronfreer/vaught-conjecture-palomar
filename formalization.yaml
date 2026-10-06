@@ -1,5 +1,5 @@
-# Draft: bibliographic details, production history and final verification receipts
-# must be completed before submission. No Palomar registration is claimed.
+# Draft: final verification receipts and submission validation remain pending.
+# No Palomar registration is claimed.
 version: "v0.4"
 
 project:
@@ -28,13 +28,14 @@ sources:
   - title: "Unpublished draft on a counterexample to infinitary Vaught's conjecture"
     authors:
       - Robin Knight
+    year: 2026
     type: paper
     relationship: formalizes
     author_endorsement: participated
     note: >-
-      Descriptive citation pending the draft's bibliographic title and version/date.
-      Corrections and proof reorganizations will be documented separately from the
-      assertion that the source's principal result is formalized.
+      Unpublished, nonpublic manuscript. Formalizes the key result and general
+      approach of an unpublished draft by Robin Knight, incorporating new ideas
+      developed through human–AI interaction.
 
 related_formalizations:
   - id: https://github.com/cameronfreer/infinitary-logic
@@ -58,15 +59,19 @@ automation:
       tool_setup: "Human mathematical collaboration and direction of the formalization."
     - method: agent
       tool_setup: >-
-        AI agents assisted with implementation and review. The historical model
-        and tool inventory is being reconciled before submission.
+        GPT models from 5.2 through 6 and Claude models from Opus 4.5 through
+        Fable 5.1 and Opus 5.5. Initially used for proof implementation following
+        Knight's manuscript; later models were also used for mathematical
+        exploration, counterexample search, refactoring, documentation, and review.
   notes: >-
-    This is a provisional production account, not a complete disclosure yet.
-    Exact costs, elapsed time and prompt logs are not being reconstructed from guesses.
+    SMT and Horn solvers were used in the course of finding the proof, but do not
+    play a role in the final formalization.
 
 review:
   status: agent-reviewed
   notes: >-
+    Human mathematical direction and review, with agent-assisted implementation
+    and source review.
     Agent review and local Comparator, NanoDa and Lean kernel checks have been
     completed for the independent prototype. Review and verification of the
     migrated standalone package remain in progress. No independent human review
@@ -80,8 +85,6 @@ status:
 submission_preparation:
   ready: false
   outstanding:
-    - "Confirm the unpublished draft's bibliographic title and version/date."
-    - "Complete the production and human-review account."
     - "Document material corrections and source-to-formalization alignment."
     - "Finish module migration and verify the complete pinned package."
     - "Run fresh Comparator, both kernel replays and the Palomar workflow."
