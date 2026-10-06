@@ -49,9 +49,9 @@ classification:
   arxiv:
     - math.LO
   msc2020:
-    - 03C15
-    - 03C75
-    - 03E15
+    - "03C15"
+    - "03C75"
+    - "03E15"
 
 automation:
   methods:
