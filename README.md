@@ -1,34 +1,36 @@
-# Infinitary counterexample: certification preparation
+# A counterexample to Vaught's conjecture for infinitary logic
 
-Private preparation repository for a prospective Palomar submission. **Not a
-registered or certified result, and not yet a standalone buildable extraction.**
+**Nathanael Ackerman, Cameron Freer, Robin Knight**
 
-The intended statement is the existence of a sentence of countable infinitary
-logic in a countable relational language having exactly aleph-one isomorphism
-classes of countably infinite models, no finite models, and no nonempty perfect
-antichain of model codes in the ordinary product topology.
+There is a counterexample to Vaught's conjecture for $L_{\omega_1,\omega}$.
+This formalization is based on an unpublished draft by Robin Knight.
 
-This is not a claim to refute the first-order Vaught conjecture. The perfect-set
-conclusion is stated independently of the continuum hypothesis.
+Specifically, it constructs a sentence in a countable relational language with
+exactly $\aleph_1$ isomorphism classes of countable models and no nonempty perfect
+set of pairwise nonisomorphic model codes. The perfect-set conclusion does not
+assume the continuum hypothesis. This is not a counterexample to the first-order
+Vaught conjecture.
 
-The proof is being extracted from
-[vaught-conjecture](https://github.com/cameronfreer/vaught-conjecture), initially
-at `57d74cd8309696d242614aeaede028e56321cfe3`. This repository is a derivative
-verification package, not an independent rediscovery or a new formalization.
-The independent Challenge exposes syntax, semantics, coding and isomorphism;
-its Solution supplies the already-proved example.
+The Lean formalization was carried out by Cameron Freer in collaboration with
+Nathanael Ackerman and Robin Knight.
 
-## Preparation status
+## Statement and proof
 
-- The independent prototype passed local Comparator matching, NanoDa and Lean
-  default-kernel replay on 2026-10-06 using the reference project's built pins.
-- Source-module conversion, clean-build provenance and the Palomar workflow
-  remain outstanding. The current Solution still imports a legacy module.
-- Attribution, source citations, assistance history and final metadata are under
-  discussion. There is no submission-ready `formalization.yaml` yet.
-- No registration or publication action is authorized by these files. The owner
-  will approve public visibility and submission separately.
+[Challenge](Palomar/Challenge.lean) gives the independent statement, including
+explicit syntax, semantics, model coding and isomorphism.
+[Solution](Palomar/Solution.lean) supplies the formal proof.
 
-Preserve original copyright and license notices when extracting source. Do not
-commit compiled objects, exported proof dumps, dependency checkouts or private
-working notes. Extraction tooling must record source hashes and transformations.
+This repository packages the proof developed in the authors' private working
+development. The supporting infinitary model theory builds on
+[InfinitaryLogic](https://github.com/cameronfreer/infinitary-logic).
+
+## Status
+
+Preparation for Palomar is in progress. The independent prototype passed local
+Comparator, NanoDa and Lean kernel checks; migration to a standalone package on
+canonical Mathlib is underway. This repository is not yet a completed standalone
+build or a registered Palomar entry.
+
+## License
+
+The formalization is released under the [Apache 2.0 license](LICENSE).
