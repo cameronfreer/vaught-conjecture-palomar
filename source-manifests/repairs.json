@@ -1,0 +1,198 @@
+{
+  "baseline_manifest": "source-manifests/production.json",
+  "baseline_manifest_sha256": "0b10cbba492025670df3756e70e0c25c51e0b09a1e7f3fb01a27c171302c8623",
+  "policy": "visibility-and-explicit-import-v2",
+  "repairs": [
+    {
+      "explanation": "Expose the metric-space declaration required by public declarations under strict privateInPublic=false. The reducible attribute, noncomputable modifier, signature, definition body, and attribute [local instance] registration are unchanged. The parent applied this exact visibility repair and reported a strict leaf compile with exit 0.",
+      "id": "0001-mycielski-cantor-metric-space",
+      "new": "@[reducible] noncomputable def cantorMetricSpace",
+      "old": "@[reducible] private noncomputable def cantorMetricSpace",
+      "path": "InfinitaryLogic/Descriptive/Mycielski.lean",
+      "postimage_sha256": "cce1ece7117436843bc45134f9537b7b5fa633e1e89dca4c70566c4d9126f8e7",
+      "preimage_sha256": "f7845d20a12f4a33d4b3ab4abb56496e4dcdda60505f0de08ac9d711c072cbab"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0002-InfinitaryLogic-Descriptive-StructureIsoSetoid-ambientTop",
+      "new": "abbrev ambientTop",
+      "old": "private abbrev ambientTop",
+      "path": "InfinitaryLogic/Descriptive/StructureIsoSetoid.lean",
+      "postimage_sha256": "de649e16b76b2237d6e2370eee517f3b3755688ec3075f3849bc9ddbafce511f",
+      "preimage_sha256": "0a0cdbeb69e4288b51acaa52fa01767c8196fe73569b94e08efe11da0b5b4a2d"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0003-InfinitaryLogic-Methods-Henkin-Construction-termSetoidFamily",
+      "new": "def termSetoidFamily",
+      "old": "private def termSetoidFamily",
+      "path": "InfinitaryLogic/Methods/Henkin/Construction.lean",
+      "postimage_sha256": "439eb16d9ee4882e522500ca17b702661712d242ebbf5e00e8243ef5941d046c",
+      "preimage_sha256": "a5a2be36eb290c40a26f08d4d43f99b31f4bfd6782e0c05234e56366dcd9794f"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0004-VaughtConjecture-Knight-BranchAvailability-indices",
+      "new": "def indices",
+      "old": "private def indices",
+      "path": "VaughtConjecture/Knight/BranchAvailability.lean",
+      "postimage_sha256": "f4766b6af6cc09b7b51b4c11cf75dde7f413f162e7c22de2ef91849b708d3407",
+      "preimage_sha256": "ef0e8ab247665e2d0faaa47c37ae3568ffef4e3f7f3ff44c5302d2e9c1015e54"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0005-VaughtConjecture-Knight-BranchAvailability-row",
+      "new": "noncomputable def row",
+      "old": "private noncomputable def row",
+      "path": "VaughtConjecture/Knight/BranchAvailability.lean",
+      "postimage_sha256": "28429dcc6ab1490e522ef9d1091cd6cb9afb9b19f561f72352696e914fe143ec",
+      "preimage_sha256": "f4766b6af6cc09b7b51b4c11cf75dde7f413f162e7c22de2ef91849b708d3407"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0006-VaughtConjecture-Knight-BranchAvailability-num",
+      "new": "noncomputable def num",
+      "old": "private noncomputable def num",
+      "path": "VaughtConjecture/Knight/BranchAvailability.lean",
+      "postimage_sha256": "68a683ceb1f7a4d1c27825d770c8d806937c2fb44e1e926f2aa1746a736ef883",
+      "preimage_sha256": "28429dcc6ab1490e522ef9d1091cd6cb9afb9b19f561f72352696e914fe143ec"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0007-VaughtConjecture-Knight-BranchAvailability-low",
+      "new": "def low",
+      "old": "private def low",
+      "path": "VaughtConjecture/Knight/BranchAvailability.lean",
+      "postimage_sha256": "9cfce319da569b158ec14b21afc457b4eddc92b2fab814aa95fcaa8d3326b10b",
+      "preimage_sha256": "68a683ceb1f7a4d1c27825d770c8d806937c2fb44e1e926f2aa1746a736ef883"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0008-VaughtConjecture-Knight-CanonicalRecursiveCoverage-bottomProfile",
+      "new": "def bottomProfile",
+      "old": "private def bottomProfile",
+      "path": "VaughtConjecture/Knight/CanonicalRecursiveCoverage.lean",
+      "postimage_sha256": "7c3224f1c672247cba251364f2f3ffdf597c19da1176f0a2fe5b6e270e643b87",
+      "preimage_sha256": "4ff1e4b58a5af7466d398a1579225f35cebc175bdbadfde123ef29c93d078a8f"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0009-VaughtConjecture-Knight-ControllerOrderCover-indices",
+      "new": "def indices",
+      "old": "private def indices",
+      "path": "VaughtConjecture/Knight/ControllerOrderCover.lean",
+      "postimage_sha256": "8b0bef1857b9ae2813e47046c06957cc142eedbfd08455807be73f0201195af0",
+      "preimage_sha256": "a4ea13ee99fbbd190453cc3dad3fd023615d5cabf1fdcdb3ef1ba818b40788ef"
+    },
+    {
+      "explanation": "Noether-authorized private-data visibility repair from the migration scout. Remove only the private modifier; the declaration name, signature, definition body, attributes, and local instance registration remain unchanged.",
+      "id": "0010-VaughtConjecture-Knight-ControllerOrderCover-low",
+      "new": "def low",
+      "old": "private def low",
+      "path": "VaughtConjecture/Knight/ControllerOrderCover.lean",
+      "postimage_sha256": "c19d93fceaeb707b33761da1a3af1f940e5cfbefd1cffd7069770112f12a2296",
+      "preimage_sha256": "8b0bef1857b9ae2813e47046c06957cc142eedbfd08455807be73f0201195af0"
+    },
+    {
+      "explanation": "Parent-authorized explicit public Mathlib import restores Nat.cast_le visibility after module conversion. Only the anchored header import is added; the declaration and proof body suffix is unchanged.",
+      "id": "0011-jump-closed-core-explicit-nat-cast-order-import",
+      "kind": "explicit-public-import",
+      "new": "public import Mathlib.Data.ENat.Lattice\npublic import Mathlib.Data.Nat.Cast.Order.Basic\n",
+      "old": "public import Mathlib.Data.ENat.Lattice\n",
+      "path": "VaughtConjecture/JumpClosedCore.lean",
+      "postimage_sha256": "65cdf092d347eb645096a0020e94b2282511c7bf654d61e0b6ae6ac6ed5dfbae",
+      "preimage_sha256": "e544adc85b0d3b226881846672f93bd9ff5d03502312d42526bc02f629ab8abf"
+    },
+    {
+      "explanation": "Expose the existing proof helper referenced in the exported term-model structure; signature and proof body unchanged. Compiler-confirmed module visibility failure.",
+      "id": "0012-henkin-func_congr",
+      "new": "theorem func_congr ",
+      "old": "private theorem func_congr ",
+      "path": "InfinitaryLogic/Methods/Henkin/Construction.lean",
+      "postimage_sha256": "aa50aa9348aefbf6d7c05f0044936955b0c68eab83b1f3bf20357092865ef49f",
+      "preimage_sha256": "439eb16d9ee4882e522500ca17b702661712d242ebbf5e00e8243ef5941d046c"
+    },
+    {
+      "explanation": "Expose the existing proof helper referenced in the exported term-model structure; signature and proof body unchanged. Compiler-confirmed module visibility failure.",
+      "id": "0013-henkin-rel_congr",
+      "new": "theorem rel_congr ",
+      "old": "private theorem rel_congr ",
+      "path": "InfinitaryLogic/Methods/Henkin/Construction.lean",
+      "postimage_sha256": "40644491d6380badb11db6151cca31949cbfd930a1bbf8a331dde4b1a0b9c861",
+      "preimage_sha256": "aa50aa9348aefbf6d7c05f0044936955b0c68eab83b1f3bf20357092865ef49f"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair: expose a proof helper referenced by a public data declaration. Signature and proof body unchanged.",
+      "id": "0014-StructuralChartComparison-lowerChart",
+      "new": "theorem lowerChart ",
+      "old": "private theorem lowerChart ",
+      "path": "VaughtConjecture/Knight/StructuralChartComparison.lean",
+      "postimage_sha256": "fde7c755298c9182497a9035bede3c8cfb2ea0753cba398eae4d1f37c0547864",
+      "preimage_sha256": "f7019ae095f76f3322f32646e13371452d5141aaae818fc7a6e7265d35814f91"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair: expose a proof helper referenced by a public data declaration. Signature and proof body unchanged.",
+      "id": "0015-StructuralChartComparison-reverseChart",
+      "new": "theorem reverseChart ",
+      "old": "private theorem reverseChart ",
+      "path": "VaughtConjecture/Knight/StructuralChartComparison.lean",
+      "postimage_sha256": "e351d4278aec6860f7a4fbda3a4bb637fd1573206b5b2215cce080052f507edf",
+      "preimage_sha256": "fde7c755298c9182497a9035bede3c8cfb2ea0753cba398eae4d1f37c0547864"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair: expose a proof helper referenced by a public data declaration. Signature and proof body unchanged.",
+      "id": "0016-BranchAvailability-binary_plan",
+      "new": "theorem binary_plan ",
+      "old": "private theorem binary_plan ",
+      "path": "VaughtConjecture/Knight/BranchAvailability.lean",
+      "postimage_sha256": "9247e56301153b257f3abb3b9e6f094917415ce1b1814206c1a537393cc514cd",
+      "preimage_sha256": "9cfce319da569b158ec14b21afc457b4eddc92b2fab814aa95fcaa8d3326b10b"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair of a helper referenced by exposed data. Statement and proof body unchanged.",
+      "id": "0017-CoatomBoundaryPresentation-exists_missing",
+      "new": "theorem exists_missing ",
+      "old": "private theorem exists_missing ",
+      "path": "VaughtConjecture/Knight/CoatomBoundaryPresentation.lean",
+      "postimage_sha256": "b9bd7fa2411c501c1b4bad119c6d2487934e1c26f95aaa64d3b8643d1bbc94e2",
+      "preimage_sha256": "d252b25c03d16471bf0baf6903af5e5c8f79997e6e2f775161d5ad937737ff06"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair of a helper referenced by exposed data. Statement and proof body unchanged.",
+      "id": "0018-CoatomBoundaryPresentation-common_image_right",
+      "new": "theorem common_image_right ",
+      "old": "private theorem common_image_right ",
+      "path": "VaughtConjecture/Knight/CoatomBoundaryPresentation.lean",
+      "postimage_sha256": "b9e98f9b0d3e13f10edcd9dbd705e4d28948f1a2ce25a65e1b6da187788e4f0a",
+      "preimage_sha256": "b9bd7fa2411c501c1b4bad119c6d2487934e1c26f95aaa64d3b8643d1bbc94e2"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair of a helper referenced by exposed data. Statement and proof body unchanged.",
+      "id": "0019-CoatomBoundaryPresentation-common_plan",
+      "new": "theorem common_plan ",
+      "old": "private theorem common_plan ",
+      "path": "VaughtConjecture/Knight/CoatomBoundaryPresentation.lean",
+      "postimage_sha256": "b20098829723299b95f8b540cf28f21cfb032f5eaef5debdf1f45867dc7e88d2",
+      "preimage_sha256": "b9e98f9b0d3e13f10edcd9dbd705e4d28948f1a2ce25a65e1b6da187788e4f0a"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair of proof helper used by a public chart receipt. Statement and proof body unchanged.",
+      "id": "0020-ProjectedChartComparison-lowerChart",
+      "new": "theorem lowerChart ",
+      "old": "private theorem lowerChart ",
+      "path": "VaughtConjecture/Knight/ProjectedChartComparison.lean",
+      "postimage_sha256": "a9ef45e1aaf622d7d021798a9f7d9fd02bcdcd9fb33ff1d9a9155235d6dce61a",
+      "preimage_sha256": "d5fd22a7071c7e225309dcc7a6cd65be3ab818778053972f959d0acb73891a5e"
+    },
+    {
+      "explanation": "Compiler-confirmed visibility-only repair of proof helper used by a public chart receipt. Statement and proof body unchanged.",
+      "id": "0021-ProjectedChartComparison-reverseChart",
+      "new": "theorem reverseChart ",
+      "old": "private theorem reverseChart ",
+      "path": "VaughtConjecture/Knight/ProjectedChartComparison.lean",
+      "postimage_sha256": "7302c5da4021227db92d3e5b9288cd27019ff8f6a876f52333ced93810856392",
+      "preimage_sha256": "a9ef45e1aaf622d7d021798a9f7d9fd02bcdcd9fb33ff1d9a9155235d6dce61a"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,4 +1,4 @@
-# Draft: final verification receipts and submission validation remain pending.
+# Draft: local verification passed; submission validation remains pending.
 # No Palomar registration is claimed.
 version: "v0.4"
 
@@ -42,7 +42,7 @@ related_formalizations:
     relationship: builds-on
     note: >-
       Supplies the reused infinitary model-theory infrastructure. Selected sources
-      are being migrated into this package; their upstream revisions, licenses,
+      are bundled in this package; their upstream revisions, licenses,
       hashes and transformations are recorded in the source-provenance manifest.
 
 classification:
@@ -72,20 +72,21 @@ review:
   notes: >-
     Human mathematical direction and review, with agent-assisted implementation
     and source review.
-    Agent review and local Comparator, NanoDa and Lean kernel checks have been
-    completed for the independent prototype. Review and verification of the
-    migrated standalone package remain in progress. No independent human review
-    or Palomar review is claimed by this draft.
+    The migrated standalone package passed local proof-module compilation,
+    strict Solution compilation, a transitive standard-axiom audit of the theorem
+    and its two adapters, Comparator, NanoDa and Lean kernel replay, and both
+    negative controls. This is not a clean-checkout workflow result.
+    No independent human review or Palomar review is claimed by this draft.
 
 status:
   scope: >-
     A standalone extraction of the proof developed in the authors' private working
-    development. The module-system migration and final verification are in progress.
+    development. The module-system migration and local verification are complete;
+    submission validation and publication review remain pending.
 
 submission_preparation:
   ready: false
   outstanding:
     - "Document material corrections and source-to-formalization alignment."
-    - "Finish module migration and verify the complete pinned package."
-    - "Run fresh Comparator, both kernel replays and the Palomar workflow."
+    - "Validate clean-checkout reproduction and run the Palomar workflow."
     - "Review publication privacy, obtain approval and make sources public."

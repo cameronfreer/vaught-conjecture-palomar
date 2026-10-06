@@ -25,10 +25,15 @@ development. The supporting infinitary model theory builds on
 
 ## Status
 
-Preparation for Palomar is in progress. The independent prototype passed local
-Comparator, NanoDa and Lean kernel checks; migration to a standalone package on
-canonical Mathlib is underway. This repository is not yet a completed standalone
-build or a registered Palomar entry.
+The standalone module migration on canonical Mathlib passed local verification:
+all 909 supporting proof modules, strict Solution compilation, the standard-axiom
+audit, Comparator, and both NanoDa and Lean kernel replay. Wrong-statement and
+unproved-challenge controls were rejected as expected.
+
+See the [verification record](docs/evidence/canonical-migration.md) and
+[build instructions](docs/BUILD.md). These are local checks, not a Palomar
+certification or a clean-checkout workflow result. Submission preparation remains
+in progress; no Palomar registration is claimed.
 
 ## License
 

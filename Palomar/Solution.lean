@@ -3,7 +3,9 @@ Copyright (c) 2026 Cameron Freer. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Cameron Freer
 -/
-import VaughtConjecture.Knight.ExpansionDomainEndpoint
+module
+
+public import VaughtConjecture.Knight.ExpansionDomainEndpoint
 
 /-!
 # Proof of the independent infinitary counterexample statement
@@ -13,10 +15,11 @@ syntax and semantics are supplied by the proof library instead. Comparator must
 compare their actual definitions as well as the final theorem. The finite model
 and perfect-set assertions use the same sentence as the cardinality assertion.
 
-This is a legacy-module feasibility adapter, not a registrable Palomar Solution:
-Lean refuses a `module` import of the current non-module endpoint. Conversion of
-the proof closure is a separate prerequisite, not bypassed by this prototype.
+This module consumes the migrated proof closure. Verification of the full migrated
+package and its independent replay are prerequisites for submission.
 -/
+
+@[expose] public section
 
 namespace PalomarChallenge
 
@@ -92,7 +95,7 @@ def NoPerfectAntichain (φ : (language R).Sentenceω) : Prop :=
 open FirstOrder.Language
 open VaughtConjecture.Knight
 
-private abbrev knightRelations := knightLang.Relations
+abbrev knightRelations := knightLang.Relations
 
 /-- The ordinary permutation definition agrees with the library's structure isomorphisms. -/
 theorem isomorphic_iff_library (c d : Code knightRelations ℕ) :

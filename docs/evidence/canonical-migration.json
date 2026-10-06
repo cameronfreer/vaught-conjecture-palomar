@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-06",
+  "kind": "local-verification-summary-not-palomar-certification",
+  "limitations": [
+    "No clean-checkout native Lake build yet",
+    "No official Palomar workflow or submission",
+    "Full local receipts and exports not included in this summary",
+    "Agent source reviews are not independent reruns of the complete proof"
+  ],
+  "packaging_tests": {
+    "passed": 75
+  },
+  "production": {
+    "driver_sha256": "b4c054908a918bbee6ce8fe26dbd52efcc69579c03e9d64d42c317b767542df3",
+    "fresh": 6,
+    "jobs": 16,
+    "keep_going": true,
+    "legacy_attested": 0,
+    "modules": 909,
+    "receipt_sha256": "4a2e714e16d2ce47d432738b7e32dfca4033046581d85c471a738e996a0804ca",
+    "repair_verification": {
+      "baseline_manifest_sha256": "0b10cbba492025670df3756e70e0c25c51e0b09a1e7f3fb01a27c171302c8623",
+      "repair_chain_sha256": "bc9addfe32abb1b38548452657adfbd515b3deb2d598802956ae7c4fbce437ab",
+      "repair_manifest_sha256": "75598e7a9a2a519624af532e58541e99bf99a6f581ece66e7529a29e7504a805",
+      "repaired_files": 10,
+      "repairs_checked": 21,
+      "source_tree_sha256": "4804f6aacd5171b8f2c9ca97e636d7ad17740d7dbdfb10c8b87fb7293737e7db",
+      "sources_checked": 909,
+      "status": "checked"
+    },
+    "run": "20261006T171246Z-ffac59ae",
+    "status": "passed",
+    "validated_reuse": 903,
+    "verifier_sha256": "46af9bb5bd09cd864aca6834e7a576be6a6e7cc47bcd2db51e4913a175982aea"
+  },
+  "replay": {
+    "export_sha256": {
+      "challenge.ndjson": "ef7a797cfa79b74983ca089ba413778783c168a473374bfc58706f2bc0fef51c",
+      "solution.ndjson": "3070f04a8bce51fa20228237146441584e163232a5fd1711cfe5dce4d4039f98",
+      "wrong.ndjson": "8a16fe75270007554a39b8d11df61b128643150181fc1f980145f1d859803e18"
+    },
+    "logs": {
+      "audit.log": "Independent-statement solution and both bridges use standard axioms only.\n",
+      "challenge-as-proof.log": "error: Illegal axiom detected: 'sorryAx'\n",
+      "comparator.log": "Running nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n",
+      "wrong.log": "error: Challenge and solution theorem statement do not match: 'PalomarChallenge.independent_challenge'\n"
+    },
+    "run": "run.ExlJcY",
+    "source_sha256": {
+      "Palomar/Challenge.lean": "c6181ddd5e64da18074637c29315a00182bbfea1349002df45f5f3c12b1ecd18",
+      "Palomar/Solution.lean": "9dfac1c530710fcea139c2d682260d1d3ba61d0ac3c7f92619acf6a6b1db9523",
+      "Tests/SolutionAxioms.lean": "e5c4a5a58f3a52c77562a85cf06fb1e6565b97ae0a9899a8c7f6cc269ea409e5",
+      "Tests/WrongStatement.lean": "d0409936a7730a0f4937ad74799d1c164f17b2df4a6964063bcf8bc52d43c736",
+      "comparator.json": "bb5a1dff56ed6b973a0522b43b46404673e085e001d3a68f841fc24e29344152",
+      "lake-manifest.json": "8d9b0324089e6e3759cc0576a5424ede3598cad09654dec77abbeb6e1a691be2",
+      "lakefile.toml": "29923fce90521d4ec08ce3110973bc26caa850504ed896e8bf6650f3dc26f4a5",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "scripts/check_palomar_solution.sh": "301bd922aa0ea6e96b6cc03f826e1d7b2e33ea95b4d0a7ce6676a700e07b6012",
+      "scripts/extract_proof_sources.py": "3c956826a6c22db25d91f437ccde330bdeafeb014cf293b0de27a8d945acb430",
+      "source-manifests/production.json": "0b10cbba492025670df3756e70e0c25c51e0b09a1e7f3fb01a27c171302c8623",
+      "source-manifests/repairs.json": "75598e7a9a2a519624af532e58541e99bf99a6f581ece66e7529a29e7504a805"
+    }
+  }
+}
