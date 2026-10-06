@@ -1,0 +1,88 @@
+# Draft: bibliographic details, production history and final verification receipts
+# must be completed before submission. No Palomar registration is claimed.
+version: "v0.4"
+
+project:
+  name: "A counterexample to Vaught's conjecture for infinitary logic"
+  description: >-
+    There is a counterexample to Vaught's conjecture for L_{omega_1,omega}.
+    This formalization is based on an unpublished draft by Robin Knight.
+    It constructs a sentence in a countable relational language with exactly
+    aleph-one isomorphism classes of countable models and no nonempty perfect
+    set of pairwise nonisomorphic model codes. This is not a counterexample to
+    the first-order Vaught conjecture.
+  authors:
+    - Nathanael Ackerman
+    - Cameron Freer
+    - Robin Knight
+  responsible_maintainers:
+    - Cameron Freer
+  license: Apache-2.0
+
+contribution_statement: >-
+  The Lean formalization was carried out by Cameron Freer in collaboration with
+  Nathanael Ackerman and Robin Knight. The construction is based on an unpublished
+  draft by Robin Knight.
+
+sources:
+  - title: "Unpublished draft on a counterexample to infinitary Vaught's conjecture"
+    authors:
+      - Robin Knight
+    type: paper
+    relationship: formalizes
+    author_endorsement: participated
+    note: >-
+      Descriptive citation pending the draft's bibliographic title and version/date.
+      Corrections and proof reorganizations will be documented separately from the
+      assertion that the source's principal result is formalized.
+
+related_formalizations:
+  - id: https://github.com/cameronfreer/infinitary-logic
+    relationship: builds-on
+    note: >-
+      Supplies the reused infinitary model-theory infrastructure. Selected sources
+      are being migrated into this package; their upstream revisions, licenses,
+      hashes and transformations are recorded in the source-provenance manifest.
+
+classification:
+  arxiv:
+    - math.LO
+  msc2020:
+    - 03C15
+    - 03C75
+    - 03E15
+
+automation:
+  methods:
+    - method: manual
+      tool_setup: "Human mathematical collaboration and direction of the formalization."
+    - method: agent
+      tool_setup: >-
+        AI agents assisted with implementation and review. The historical model
+        and tool inventory is being reconciled before submission.
+  notes: >-
+    This is a provisional production account, not a complete disclosure yet.
+    Exact costs, elapsed time and prompt logs are not being reconstructed from guesses.
+
+review:
+  status: agent-reviewed
+  notes: >-
+    Agent review and local Comparator, NanoDa and Lean kernel checks have been
+    completed for the independent prototype. Review and verification of the
+    migrated standalone package remain in progress. No independent human review
+    or Palomar review is claimed by this draft.
+
+status:
+  scope: >-
+    A standalone extraction of the proof developed in the authors' private working
+    development. The module-system migration and final verification are in progress.
+
+submission_preparation:
+  ready: false
+  outstanding:
+    - "Confirm the unpublished draft's bibliographic title and version/date."
+    - "Complete the production and human-review account."
+    - "Document material corrections and source-to-formalization alignment."
+    - "Finish module migration and verify the complete pinned package."
+    - "Run fresh Comparator, both kernel replays and the Palomar workflow."
+    - "Review publication privacy, obtain approval and make sources public."
