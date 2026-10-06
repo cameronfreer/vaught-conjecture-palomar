@@ -1,0 +1,10 @@
+.lake/
+*.olean
+*.olean.private
+*.olean.server
+*.ilean
+*.ir
+*.ir.sig
+__pycache__/
+*.pyc
+*.ndjson
