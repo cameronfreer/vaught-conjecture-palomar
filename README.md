@@ -27,13 +27,17 @@ development. The supporting infinitary model theory builds on
 
 The standalone module migration on canonical Mathlib passed local verification:
 all 909 supporting proof modules, strict Solution compilation, the standard-axiom
-audit, Comparator, and both NanoDa and Lean kernel replay. Wrong-statement and
-unproved-challenge controls were rejected as expected.
+audit, Comparator, and NanoDa, Con-Ron, and Lean kernel replay. Wrong-statement and
+unproved-challenge controls were rejected as expected. A separate checkout with
+no project build artifacts also completed the native Lake build (2,832 jobs),
+reusing only the pinned public dependency cache.
 
 See the [verification record](docs/evidence/canonical-migration.md) and
-[build instructions](docs/BUILD.md). These are local checks, not a Palomar
-certification or a clean-checkout workflow result. Submission preparation remains
-in progress; no Palomar registration is claimed.
+[build instructions](docs/BUILD.md), including the
+[private-preflight record](docs/evidence/private-preflight.md) and
+[source-alignment account](docs/SOURCE-ALIGNMENT.md). These are local checks, not
+a Palomar certification. The official full workflow is a separate gate;
+no Palomar registration is claimed.
 
 ## License
 
