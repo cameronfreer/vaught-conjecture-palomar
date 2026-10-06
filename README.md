@@ -7,9 +7,8 @@ This formalization is based on an unpublished draft by Robin Knight.
 
 Specifically, it constructs a sentence in a countable relational language with
 exactly $\aleph_1$ isomorphism classes of countable models and no nonempty perfect
-set of pairwise nonisomorphic model codes. The perfect-set conclusion does not
-assume the continuum hypothesis. This is not a counterexample to the first-order
-Vaught conjecture.
+set of pairwise nonisomorphic model codes. This is not a counterexample to the
+first-order Vaught conjecture.
 
 The Lean formalization was carried out by Cameron Freer in collaboration with
 Nathanael Ackerman and Robin Knight.
