@@ -1,5 +1,5 @@
-# Draft: local verification passed; submission validation remains pending.
-# No Palomar registration is claimed.
+# Palomar version 1 registers source commit 032ccb7a25b0ff6227128aa0aeba549c5901ea9a.
+# See docs/evidence/palomar-registration.md; later commits are distinct snapshots.
 version: "v0.4"
 
 project:
@@ -77,19 +77,16 @@ review:
     and its two adapters, Comparator, NanoDa, Con-Ron and Lean kernel replay, and
     both negative controls. A separate checkout with no project build artifacts
     passed the native Lake build using the pinned public dependency cache.
-    The official Palomar full-workflow result remains pending.
-    No independent human review or Palomar review is claimed by this draft.
+    Palomar version 1 records mechanical verification and an automated editorial
+    review of source commit 032ccb7a25b0ff6227128aa0aeba549c5901ea9a.
+    No independent human mathematical review is claimed here.
 
 status:
   scope: >-
     A standalone extraction of the proof developed in the authors' private working
     development. The module-system migration and local verification are complete;
-    native clean-project reproduction and publication review are complete;
-    official submission validation remains pending.
-
-submission_preparation:
-  ready: false
-  outstanding:
-    - "Run the official full Palomar mechanical workflow on the public final snapshot."
-    - "Confirm the exact submission snapshot and authorization relationship before intake."
-    - "Review the editorial report before separately authorizing permanent registration."
+    native clean-project reproduction and publication review are complete.
+    Source commit 032ccb7a25b0ff6227128aa0aeba549c5901ea9a was registered as
+    PALOMAR-2026-10-07-000001, version 1, on October 7, 2026:
+    https://palomar-registry.org/entry?id=PALOMAR-2026-10-07-000001&version=1.
+    This status update does not change the immutable registered snapshot.

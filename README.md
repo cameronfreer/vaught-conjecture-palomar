@@ -25,6 +25,14 @@ development. The supporting infinitary model theory builds on
 
 ## Status
 
+Registered with Palomar as
+[PALOMAR-2026-10-07-000001, version 1](https://palomar-registry.org/entry?id=PALOMAR-2026-10-07-000001&version=1)
+on October 7, 2026. The registered source snapshot is commit
+[`032ccb7a25b0ff6227128aa0aeba549c5901ea9a`](https://github.com/cameronfreer/vaught-conjecture-palomar/tree/032ccb7a25b0ff6227128aa0aeba549c5901ea9a).
+See the [registration record](docs/evidence/palomar-registration.md) for the
+official verification links. Subsequent commits are not covered by that
+registration merely by appearing in this repository.
+
 The standalone module migration on canonical Mathlib passed local verification:
 all 909 supporting proof modules, strict Solution compilation, the standard-axiom
 audit, Comparator, and NanoDa, Con-Ron, and Lean kernel replay. Wrong-statement and
@@ -35,9 +43,8 @@ reusing only the pinned public dependency cache.
 See the [verification record](docs/evidence/canonical-migration.md) and
 [build instructions](docs/BUILD.md), including the
 [private-preflight record](docs/evidence/private-preflight.md) and
-[source-alignment account](docs/SOURCE-ALIGNMENT.md). These are local checks, not
-a Palomar certification. The official full workflow is a separate gate;
-no Palomar registration is claimed.
+[source-alignment account](docs/SOURCE-ALIGNMENT.md). These historical local
+checks are separate from the official Palomar verification linked above.
 
 ## License
 

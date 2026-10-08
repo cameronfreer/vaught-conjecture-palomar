@@ -63,13 +63,17 @@ do not publish the repository or submit an entry to Palomar.
 
 ## Official mechanical preflight
 
-After publication, manually dispatch `.github/workflows/palomar-preflight.yml`
-with the full commit SHA to verify. It calls the official reusable workflow in
+The [version 1 registration record](evidence/palomar-registration.md) links the
+completed official verification of the registered source snapshot.
+
+To verify another public snapshot, manually dispatch
+`.github/workflows/palomar-preflight.yml` with its full commit SHA.
+It calls the official reusable workflow in
 `full` mode with both the workflow reference and `pipeline_commit` pinned to the
 same revision, using the approved `palomar-standard-v1` GitHub-hosted profile.
 Its public-repository guard prevents accidental dispatch against private sources.
 
-Require the resulting mechanical report to say `status: pass` before submission.
+Require the resulting mechanical report to say `status: pass` before a new submission.
 This workflow does not submit an entry, perform editorial review, or register it.
 The additional local Con-Ron check used a temporary checker configuration; the
 submitted `comparator.json` remains unchanged. Palomar selects its own checkers.
